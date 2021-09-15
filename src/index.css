@@ -25,13 +25,6 @@ code {
     'Courier New',
     monospace;
 }
-  
-body {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
 p {
   margin: 0;
@@ -56,21 +49,20 @@ p {
   font-size: 30px;
   height: 40px;
   text-align: right;
-  color: white
-
+  color: white;
 }
 
 .calc-container > .int_values {
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
   border: 0.5px solid #d6d6d6;
   text-align: center;
   padding: 20px 0;
   font-size: 12px;
-  color: #3e3e3f
+  color: #3e3e3f;
 }
 
 .calc-container > .arithmetic_operand {
-  background-color: #F5913E;
+  background-color: #f5913e;
   border: 0.5px solid #d6d6d6;
   text-align: center;
   padding: 16px 0;
