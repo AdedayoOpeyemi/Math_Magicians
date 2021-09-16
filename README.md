@@ -4,7 +4,7 @@
 
 > One paragraph statement about the project.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./src/assets/images/calc_image.png)
 
 Additional description about the project and its features.
 
@@ -12,32 +12,49 @@ Additional description about the project and its features.
 
 - Javascript
 - React
-- Technologies used
+- Git
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[to be updated](https://#)
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- Git
+- Code editor of choice
+- Node & Npm
+
 ### Setup
+
+1. Navigate to your desired directory in your local machine using the terminal.
+
+2. Clone repository by running `git clone git@github.com:AdedayoOpeyemi/math_magicians.git` in your local terminal
 
 ### Install
 
-### Usage
+1. Run the following command to install the needed dependencies
+
+    `npm install`
+
+## Usage
+
+1. Use the following commands to 
+   `npm run start` to start the Webpack Dev server and serve the files from the dist directory
+   `npm run build` to complile build all source files into the dist directory
+   `npm run test` to set webpack into watch mode so that the build is automatically run whenever changes are made to any of the source files.
+   `npm run eject` to set webpack into watch mode so that the build is automatically run whenever changes are made to any of the source files.
 
 ### Run tests
+- to be updated
 
 ### Deployment
+- to be updated
 
 
 
