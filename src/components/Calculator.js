@@ -2,18 +2,7 @@ import { useState } from 'react';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
-  // constructor(props) {
-  //   super(props);
-  //   state = {
-  //     total: null,
-  //     next: null,
-  //     operation: null,
-  //   };
-  //   clickHandler = clickHandler.bind(this);
-  //   displayResult = displayResult.bind(this);
-  // }
-  const [ state, setState ] = useState({total: null, next: null, operation: null });
-
+  const [state, setState] = useState({ total: null, next: null, operation: null });
 
   const clickHandler = (e) => {
     const { total, next } = state;
@@ -48,7 +37,7 @@ const Calculator = () => {
       }
     }
     return result;
-  }
+  };
 
   return (
     <div className="calc-container">
@@ -74,6 +63,6 @@ const Calculator = () => {
       <div className="arithmetic_operand" role="button" data-button-name="=" onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>=</div>
     </div>
   );
-}
+};
 
 export default Calculator;
