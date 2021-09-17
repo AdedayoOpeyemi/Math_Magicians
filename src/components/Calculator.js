@@ -1,31 +1,33 @@
-import React from 'react';
+import { useState } from 'react';
 import calculate from '../logic/calculate';
 
-class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-    this.clickHandler = this.clickHandler.bind(this);
-    this.displayResult = this.displayResult.bind(this);
-  }
+const Calculator = () => {
+  // constructor(props) {
+  //   super(props);
+  //   state = {
+  //     total: null,
+  //     next: null,
+  //     operation: null,
+  //   };
+  //   clickHandler = clickHandler.bind(this);
+  //   displayResult = displayResult.bind(this);
+  // }
+  const [ state, setState ] = useState({total: null, next: null, operation: null });
 
-  clickHandler(e) {
-    const { total, next } = this.state;
+
+  const clickHandler = (e) => {
+    const { total, next } = state;
     if (!total && !next && e.target.classList[0] === 'arithmetic_operand') {
       return;
     }
     if (!total && !next && e.target.classList[0] === 'other_operators') {
       return;
     }
-    this.setState((objName) => calculate(objName, e.target.dataset.buttonName));
-  }
+    setState((objName) => calculate(objName, e.target.dataset.buttonName));
+  };
 
-  displayResult() {
-    const { total, next, operation } = this.state;
+  const displayResult = () => {
+    const { total, next, operation } = state;
     let result = null;
 
     if (total === null && next === null) {
@@ -48,32 +50,30 @@ class Calculator extends React.Component {
     return result;
   }
 
-  render() {
-    return (
-      <div className="calc-container">
-        <div className="calc_display">{ this.displayResult() }</div>
-        <div className="int_values" role="button" data-button-name="AC" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>AC</div>
-        <div className="other_operators" role="button" data-button-name="+/-" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>+/-</div>
-        <div className="other_operators" role="button" data-button-name="%" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>%</div>
-        <div className="arithmetic_operand" role="button" data-button-name="÷" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>÷</div>
-        <div className="int_values" role="button" data-button-name="1" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>1</div>
-        <div className="int_values " role="button" data-button-name="2" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>2</div>
-        <div className="int_values " role="button" data-button-name="3" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>3</div>
-        <div className="arithmetic_operand" role="button" data-button-name="x" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>x</div>
-        <div className="int_values " role="button" data-button-name="4" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>4</div>
-        <div className="int_values " role="button" data-button-name="5" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>5</div>
-        <div className="int_values " role="button" data-button-name="6" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>6</div>
-        <div className="arithmetic_operand" role="button" data-button-name="-" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>-</div>
-        <div className="int_values " role="button" data-button-name="7" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>7</div>
-        <div className="int_values " role="button" data-button-name="8" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>8</div>
-        <div className="int_values " role="button" data-button-name="9" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>9</div>
-        <div className="arithmetic_operand" role="button" data-button-name="+" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>+</div>
-        <div className="int_values zero" role="button" data-button-name="0" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>0</div>
-        <div className="int_values " role="button" data-button-name="0" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>.</div>
-        <div className="arithmetic_operand" role="button" data-button-name="=" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>=</div>
-      </div>
-    );
-  }
+  return (
+    <div className="calc-container">
+      <div className="calc_display">{ displayResult() }</div>
+      <div className="int_values" role="button" data-button-name="AC" onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>AC</div>
+      <div className="other_operators" role="button" data-button-name="+/-" onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>+/-</div>
+      <div className="other_operators" role="button" data-button-name="%" onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>%</div>
+      <div className="arithmetic_operand" role="button" data-button-name="÷" onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>÷</div>
+      <div className="int_values" role="button" data-button-name="1" onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>1</div>
+      <div className="int_values " role="button" data-button-name="2" onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>2</div>
+      <div className="int_values " role="button" data-button-name="3" onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>3</div>
+      <div className="arithmetic_operand" role="button" data-button-name="x" onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>x</div>
+      <div className="int_values " role="button" data-button-name="4" onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>4</div>
+      <div className="int_values " role="button" data-button-name="5" onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>5</div>
+      <div className="int_values " role="button" data-button-name="6" onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>6</div>
+      <div className="arithmetic_operand" role="button" data-button-name="-" onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>-</div>
+      <div className="int_values " role="button" data-button-name="7" onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>7</div>
+      <div className="int_values " role="button" data-button-name="8" onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>8</div>
+      <div className="int_values " role="button" data-button-name="9" onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>9</div>
+      <div className="arithmetic_operand" role="button" data-button-name="+" onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>+</div>
+      <div className="int_values zero" role="button" data-button-name="0" onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>0</div>
+      <div className="int_values " role="button" data-button-name="." onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>.</div>
+      <div className="arithmetic_operand" role="button" data-button-name="=" onClick={clickHandler} onKeyDown={clickHandler} tabIndex={0}>=</div>
+    </div>
+  );
 }
 
 export default Calculator;
