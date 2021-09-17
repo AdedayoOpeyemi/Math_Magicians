@@ -14,6 +14,11 @@ class Calculator extends React.Component {
   }
 
   clickHandler(e) {
+    if (!this.state.total && !this.state.next) {
+      if (e.target.classList[0] == "arithmetic_operand") {
+        return
+      }
+    }
     this.setState((objName) => calculate(objName, e.target.dataset.buttonName));
   }
 
