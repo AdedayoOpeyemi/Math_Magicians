@@ -18,6 +18,9 @@ class Calculator extends React.Component {
     if (!total && !next && e.target.classList[0] === 'arithmetic_operand') {
       return;
     }
+    if (!total && !next && e.target.classList[0] === 'other_operators') {
+      return;
+    }
     this.setState((objName) => calculate(objName, e.target.dataset.buttonName));
   }
 
@@ -50,8 +53,8 @@ class Calculator extends React.Component {
       <div className="calc-container">
         <div className="calc_display">{ this.displayResult() }</div>
         <div className="int_values" role="button" data-button-name="AC" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>AC</div>
-        <div className="int_values" role="button" data-button-name="+/-" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>+/-</div>
-        <div className="int_values" role="button" data-button-name="%" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>%</div>
+        <div className="other_operators" role="button" data-button-name="+/-" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>+/-</div>
+        <div className="other_operators" role="button" data-button-name="%" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>%</div>
         <div className="arithmetic_operand" role="button" data-button-name="÷" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>÷</div>
         <div className="int_values" role="button" data-button-name="1" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>1</div>
         <div className="int_values " role="button" data-button-name="2" onClick={this.clickHandler} onKeyDown={this.clickHandler} tabIndex={0}>2</div>
