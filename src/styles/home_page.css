@@ -1,0 +1,13 @@
+.home_page {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 160px;
+}
+
+.home_page > .content {
+  margin-top: 40px;
+}
+.welcome_message {
+  max-width: 480px;
+}

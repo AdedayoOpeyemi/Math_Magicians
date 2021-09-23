@@ -1,5 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import PageLogo from './PageLogo';
+import '../styles/navbar.css';
 
 const Navbar = () => {
   const links = [
@@ -22,6 +24,7 @@ const Navbar = () => {
 
   return (
     <nav className="navBar">
+      <PageLogo />
       <ul>
         {links.map((link) => (
           <li key={link.id}>
