@@ -5,27 +5,28 @@
 }
 
 body {
-  /* font-family: "Segoe UI", Arial, sans-serif; */
+  font-family: "Segoe UI", Arial, sans-serif;
   min-width: 480px;
   line-height: 1.4;
   color: #444;
-  background: #fff;
   min-height: 100vh;
-  background: linear-gradient(-45deg, #ee7752, #FFAE42, #6C756B, #367588);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+  background: linear-gradient(-45deg, #ee7752, #ffae42, #6c756b, #367588);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 h3 {
@@ -33,7 +34,7 @@ h3 {
 }
 
 p {
-  font-family: “Playfair Display”, “Didot”, "Times New Roman", Times, serif; 
+  font-family: “Playfair Display”, “Didot”, "Times New Roman", Times, serif;
 }
 
 .App {
@@ -71,12 +72,14 @@ p {
 }
 
 .page_content {
-  display: flex!important;
+  display: flex !important;
   flex-direction: column;
   height: 100vh;
 }
 
 .view_content {
+  width: 960px;
+  padding: 1em;
   margin-right: auto;
   margin-left: auto;
 }
@@ -100,23 +103,18 @@ p {
   padding: 1em;
 }
 
-.view_content {
-  width: 960px;
-  padding: 1em;
-}
-
 @media only screen and (max-width: 576px) {
   .view_content {
     width: 100%;
   }
+
   .content_container {
-    padding-top: 40px
+    padding-top: 40px;
   }
 
   .calculator_page {
     display: flex;
     flex-direction: column;
-    display: flex;
     justify-content: space-evenly;
   }
 }
@@ -127,7 +125,7 @@ p {
   }
 
   .content_container {
-    padding-top: 64px
+    padding-top: 64px;
   }
 }
 
@@ -137,7 +135,7 @@ p {
   }
 
   .content_container {
-    padding-top: 120px
+    padding-top: 120px;
   }
 }
 
@@ -149,7 +147,6 @@ p {
   .calculator_page {
     display: flex;
     flex-direction: row;
-    display: flex;
     justify-content: space-evenly;
   }
 }
