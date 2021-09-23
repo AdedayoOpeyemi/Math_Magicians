@@ -42,6 +42,15 @@ body {
   color: #61dafb;
 }
 
+.view_content {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content_container {
+  min-height: 100%
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -52,14 +61,42 @@ body {
   }
 }
 
-/* @media only screen and (max-width: 576px) {...}
+.view_content {
+  width: 960px;
+}
 
-@media only screen and (min-width: 576px) {...}
+@media only screen and (max-width: 576px) {
+  .view_content {
+    width: 100%;
+  }
+}
 
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 576px) {
+  .view_content {
+    width: 540px;
+  }
+}
 
-@media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 768px) {
+  .view_content {
+    width: 720px;
+  }
+}
 
-@media only screen and (min-width: 1200px) {...}
+@media only screen and (min-width: 992px) {
+  .view_content {
+    width: 960px;
+  }
+}
 
-@media only screen and (min-width: 1400px) {...} */
+@media only screen and (min-width: 1200px) {
+  .view_content {
+    width: 1140px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .view_content {
+    width: 1320px;
+  }
+}

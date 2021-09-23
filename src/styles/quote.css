@@ -1,0 +1,9 @@
+.quotes_container {
+  margin: auto;
+  max-width: 480px;
+  padding: 10px;
+}
+
+quotes_container > p {
+  margin: auto;
+}

@@ -16,19 +16,36 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Navbar />
+        <div className="content_container">
+          <Navbar />
+        </div>
         <Switch>
           <Route exact path="/">
-            <Home />
+            <div className="content_container">
+              <Home />
+            </div>
           </Route>
           <Route path="/calculator">
-            <Calculator />
+            <div className="content_container">
+              <div className="view_content">
+                <h3>Let us do some maths</h3>
+                <Calculator />
+              </div>
+            </div>
           </Route>
           <Route path="/quote">
-            <Quote />
+            <div className="content_container">
+              <div className="view_content">
+                <Quote />
+              </div>
+            </div>
           </Route>
           <Route path="*">
-            <NotMatch />
+            <div className="content_container">
+              <div className="view_content">
+                <NotMatch />
+              </div>
+            </div>
           </Route>
         </Switch>
       </>
