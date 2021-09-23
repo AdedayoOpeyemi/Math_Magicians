@@ -2,6 +2,6 @@ import React from 'react';
 import '../styles/pagelogo.css';
 
 const PageLogo = () => (
-  <h3>Math Magicians</h3>
+  <h1>Math Magicians</h1>
 );
 export default PageLogo;

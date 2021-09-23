@@ -16,38 +16,48 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <div className="content_container">
-          <Navbar />
+        <div className="page_content">
+          <div className="navigation">
+            <div className="view_content">
+              <Navbar />
+            </div>
+          </div>
+          <Switch>
+            <Route exact path="/">
+              <div className="content_container">
+                <div className="view_content">
+                  <Home />
+                </div>
+              </div>
+            </Route>
+            <Route path="/calculator">
+              <div className="content_container">
+                <div className="view_content calculator_page">
+                  <div>
+                    <h3>Let us do some maths this is fun!</h3>
+                  </div>
+                  <div>
+                    <Calculator />
+                  </div>
+                </div>
+              </div>
+            </Route>
+            <Route path="/quote">
+              <div className="content_container">
+                <div className="view_content">
+                  <Quote />
+                </div>
+              </div>
+            </Route>
+            <Route path="*">
+              <div className="content_container">
+                <div className="view_content">
+                  <NotMatch />
+                </div>
+              </div>
+            </Route>
+          </Switch>
         </div>
-        <Switch>
-          <Route exact path="/">
-            <div className="content_container">
-              <Home />
-            </div>
-          </Route>
-          <Route path="/calculator">
-            <div className="content_container">
-              <div className="view_content">
-                <h3>Let us do some maths</h3>
-                <Calculator />
-              </div>
-            </div>
-          </Route>
-          <Route path="/quote">
-            <div className="content_container">
-              <div className="view_content">
-                <Quote />
-              </div>
-            </div>
-          </Route>
-          <Route path="*">
-            <div className="content_container">
-              <div className="view_content">
-                <NotMatch />
-              </div>
-            </div>
-          </Route>
-        </Switch>
       </>
     );
   }

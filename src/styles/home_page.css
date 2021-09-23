@@ -5,9 +5,13 @@
   margin-top: 160px;
 }
 
-.home_page > .content {
-  margin-top: 40px;
+.home_page > h3 {
+  font-size: 32px;
+  font-weight: 900;
+  color: #b5179e;
 }
 .welcome_message {
-  max-width: 480px;
+  max-width: 560px;
+  font-size: 24px;
+  color: white;
 }

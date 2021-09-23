@@ -2,11 +2,9 @@
 .navBar ul {
   display: flex;
   flex-direction: row;
-  background-color: orangered;
   color: white;
   padding: 8px;
   justify-content: space-between;
-
 }
 
 .navBar ul {
@@ -18,10 +16,19 @@
   color: white;
   padding-left: 8px;
   padding-right: 8px;
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
-.navBar ul  li a {
+.navBar ul li a{
   text-decoration: none;
   color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+a.active-link {
+  color: orangered!important;
+  background-color: white!important;
+  padding: 8px;
+  text-decoration: none;
 }
