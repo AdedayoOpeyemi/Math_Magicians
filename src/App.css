@@ -1,3 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  min-width: 480px;
+  line-height: 1.4;
+  color: #444;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #ffae42, #6c756b, #367588);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+p {
+  font-family: “Playfair Display”, “Didot”, "Times New Roman", Times, serif;
+}
+
 .App {
   text-align: center;
 }
@@ -28,6 +67,27 @@
   color: #61dafb;
 }
 
+.navigation {
+  background-color: orangered;
+}
+
+.page_content {
+  display: flex !important;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.view_content {
+  width: 960px;
+  padding: 1em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content_container {
+  flex-grow: 1;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,5 +95,70 @@
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+.content-container {
+  width: 960px;
+  padding: 1em;
+}
+
+@media only screen and (max-width: 576px) {
+  .view_content {
+    width: 100%;
+  }
+
+  .content_container {
+    padding-top: 40px;
+  }
+
+  .calculator_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .view_content {
+    width: 540px;
+  }
+
+  .content_container {
+    padding-top: 64px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .view_content {
+    width: 720px;
+  }
+
+  .content_container {
+    padding-top: 120px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .view_content {
+    width: 960px;
+  }
+
+  .calculator_page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .view_content {
+    width: 1140px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .view_content {
+    width: 1320px;
   }
 }
