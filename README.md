@@ -5,6 +5,8 @@
 > Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations,
  Read a random math-related quote. It was built using React.
 
+ > The App consists of 3 pages: Home, Calculator, and Quote.
+
 ![Calculator Component](./src/assets/images/calc_image.png)
 ![Home Page](./src/assets/images/home_page.png)
 ![Calculator Page](./src/assets/images/calc_page.png)
@@ -20,7 +22,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[to be updated](https://#)
+[Math Magician](https://adedayoopeyemi.github.io/Math_Magicians/)
 
 
 ## Getting Started
