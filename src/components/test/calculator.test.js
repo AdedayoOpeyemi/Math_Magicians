@@ -1,8 +1,8 @@
-import { render, screen, fireEvent, getByLabelText } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import Calculator from '../Calculator';
 
-it('renders correctly', () => {
+it('Calculator renders correctly', () => {
   const tree = renderer
     .create(<Calculator />)
     .toJSON();
@@ -39,4 +39,3 @@ test('renders the changes when the calcultor button is clicked', () => {
   typedElement = screen.getByText('18');
   expect(typedElement.innerHTML).toBe('18');
 });
-

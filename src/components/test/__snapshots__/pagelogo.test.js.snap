@@ -1,5 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`PageLogo renders correctly 1`] = `
+<h1>
+  Math Magicians
+</h1>
+`;
+
 exports[`renders correctly 1`] = `
 <nav
   className="navBar"

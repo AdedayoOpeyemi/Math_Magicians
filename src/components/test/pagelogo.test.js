@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer';
 import PageLogo from '../PageLogo';
 
-it('renders correctly', () => {
+it('PageLogo renders correctly', () => {
   const tree = renderer
     .create(<PageLogo />)
     .toJSON();

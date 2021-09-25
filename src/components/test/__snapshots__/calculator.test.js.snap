@@ -1,5 +1,207 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Calculator renders correctly 1`] = `
+<div
+  className="calc-container"
+>
+  <div
+    className="calc_display"
+  >
+    0
+  </div>
+  <div
+    className="int_values"
+    data-button-name="AC"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    AC
+  </div>
+  <div
+    className="other_operators"
+    data-button-name="+/-"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    +/-
+  </div>
+  <div
+    className="other_operators"
+    data-button-name="%"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    %
+  </div>
+  <div
+    className="arithmetic_operand"
+    data-button-name="÷"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ÷
+  </div>
+  <div
+    className="int_values"
+    data-button-name="1"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    1
+  </div>
+  <div
+    className="int_values "
+    data-button-name="2"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    2
+  </div>
+  <div
+    className="int_values "
+    data-button-name="3"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    3
+  </div>
+  <div
+    className="arithmetic_operand"
+    data-button-name="x"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    x
+  </div>
+  <div
+    className="int_values "
+    data-button-name="4"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    4
+  </div>
+  <div
+    className="int_values "
+    data-button-name="5"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    5
+  </div>
+  <div
+    className="int_values "
+    data-button-name="6"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    6
+  </div>
+  <div
+    className="arithmetic_operand"
+    data-button-name="-"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    -
+  </div>
+  <div
+    className="int_values "
+    data-button-name="7"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    7
+  </div>
+  <div
+    className="int_values "
+    data-button-name="8"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    8
+  </div>
+  <div
+    className="int_values "
+    data-button-name="9"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    9
+  </div>
+  <div
+    className="arithmetic_operand"
+    data-button-name="+"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    +
+  </div>
+  <div
+    className="int_values zero"
+    data-button-name="0"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    0
+  </div>
+  <div
+    className="int_values "
+    data-button-name="."
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    .
+  </div>
+  <div
+    className="arithmetic_operand"
+    data-button-name="="
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    =
+  </div>
+</div>
+`;
+
 exports[`renders correctly 1`] = `
 <div
   className="calc-container"
