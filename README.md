@@ -72,6 +72,11 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@Oyelesiopy](https://twitter.com/oyelesiopy)
 - LinkedIn: [Opeyemi Oyelesi](https://linkedin.com/in/opeyemioyelesi)
 
+👤 **Juan Luis Gonzalez** 
+- Github: [@githubhandle](https://github.com/JbirdL86)
+- Twitter: [@twitterhandle](https://twitter.com/JuanLui06498455)
+- Linkedin: [linkedin](https://www.linkedin.com/in/juan-luis-0551921aa/)
+
 
 ## 🤝 Contributing
 
