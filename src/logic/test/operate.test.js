@@ -15,3 +15,11 @@ test('Multiplies 1 x 2 to equal 2', () => {
 test('Divides 4 / 2 to equal 2', () => {
   expect(operate(4, 2, '÷')).toBe('2');
 });
+
+test('Divides 4 / 2 to equal 2', () => {
+  expect(operate(4, 0, '÷')).toBe("Can't divide by 0.");
+});
+
+test('Divides 4 / 2 to equal 2', () => {
+  expect(operate(4, 2, '%')).toBe('0');
+});
