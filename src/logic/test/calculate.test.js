@@ -7,3 +7,7 @@ test('To reset the calculator', () => {
 test('To check which digit key was pressed', () => {
   expect(calculate({ total: '0', next: '0', operation: '+' }, '0')).toStrictEqual({});
 });
+
+test('To check if the sign button is working', () => {
+  expect(calculate({ total: 1, next: 5, operation: '+/-' }, '+/-')).toStrictEqual({ total: 1, operation: '+/-', next: '-5' });
+});

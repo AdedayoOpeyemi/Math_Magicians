@@ -16,14 +16,10 @@ test('Divides 4 / 2 to equal 2', () => {
   expect(operate(4, 2, '÷')).toBe('2');
 });
 
-test(' 7 % 5 to equal 2', () => {
-  expect(operate(4, 2, '÷')).toBe('2');
+test('Divides 4 / 2 to equal 2', () => {
+  expect(operate(4, 0, '÷')).toBe("Can't divide by 0.");
 });
 
-test('Divides 5 / 0 to equal 2', () => {
-  expect(operate(5, 0, '÷')).toBe("Can't divide by 0.");
-});
-
-test('Divides 0 / 3 to equal 0', () => {
-  expect(operate(0, 3, '÷')).toBe('0');
+test('Divides 4 / 2 to equal 2', () => {
+  expect(operate(4, 2, '%')).toBe('0');
 });
