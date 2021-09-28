@@ -5,6 +5,12 @@
 > Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations,
  Read a random math-related quote. It was built using React.
 
+## Live Demo Links
+
+[Heroku deployment](https://math-magicians-by-ope.herokuapp.com/#/)
+
+[Netlify deployment](https://elastic-fermi-bdacd5.netlify.app/#/)
+
  > The App consists of 3 pages: Home, Calculator, and Quote.
 
 ![Calculator Component](./src/assets/images/calc_image.png)
