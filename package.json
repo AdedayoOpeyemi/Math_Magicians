@@ -2,7 +2,6 @@
   "name": "math-magicians",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AdedayoOpeyemi.github.io/Math_Magicians",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -52,6 +51,7 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.25.1",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "netlify-cli": "^6.9.24",
     "react-test-renderer": "^17.0.2",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
