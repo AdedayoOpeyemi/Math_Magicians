@@ -18,7 +18,7 @@ Additional description about the project and its features.
 
 - Javascript
 - React
-- Git
+- Git, Jest
 
 ## Live Demo
 
@@ -53,15 +53,11 @@ To get a local copy up and running follow these simple example steps.
 1. Use the following commands to 
    `npm run start` to start the Webpack Dev server and serve the files from the dist directory
    `npm run build` to complile build all source files into the dist directory
-   `npm run test` to set webpack into watch mode so that the build is automatically run whenever changes are made to any of the source files.
+   
    `npm run eject` to set webpack into watch mode so that the build is automatically run whenever changes are made to any of the source files.
 
 ### Run tests
-- to be updated
-
-### Deployment
-- to be updated
-
+  `npm run test` to set webpack into watch mode so that the build is automatically run whenever changes are made to any of the source files.
 
 
 ## Authors
@@ -71,6 +67,11 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@AdedayoOpeyemi](https://github.com/AdedayoOpeyemi)
 - Twitter: [@Oyelesiopy](https://twitter.com/oyelesiopy)
 - LinkedIn: [Opeyemi Oyelesi](https://linkedin.com/in/opeyemioyelesi)
+
+👤 **Juan Luis Gonzalez** 
+- Github: [@githubhandle](https://github.com/JbirdL86)
+- Twitter: [@twitterhandle](https://twitter.com/JuanLui06498455)
+- Linkedin: [linkedin](https://www.linkedin.com/in/juan-luis-0551921aa/)
 
 
 ## 🤝 Contributing
